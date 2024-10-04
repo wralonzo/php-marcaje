@@ -1,0 +1,838 @@
+CRITICAL - 2024-10-04 00:19:51 --> ErrorException: preg_match(): Compilation failed: missing closing parenthesis at offset 17
+[Method: DELETE, Route: company/1]
+in SYSTEMPATH/Router/Router.php on line 432.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: missing closing parenthesis at offset 17', '/Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Router/Router.php', 432)
+ 2 SYSTEMPATH/Router/Router.php(432): preg_match('#^company/([0-9]+$#u', 'company/1', [])
+ 3 SYSTEMPATH/Router/Router.php(210): CodeIgniter\Router\Router->checkRoutes('company/1')
+ 4 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('company/1')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 03:42:15 --> ErrorException: preg_match(): Compilation failed: missing closing parenthesis at offset 17
+[Method: PUT, Route: company/1]
+in SYSTEMPATH/Router/Router.php on line 432.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: missing closing parenthesis at offset 17', '/Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Router/Router.php', 432)
+ 2 SYSTEMPATH/Router/Router.php(432): preg_match('#^company/([0-9]+$#u', 'company/1', [])
+ 3 SYSTEMPATH/Router/Router.php(210): CodeIgniter\Router\Router->checkRoutes('company/1')
+ 4 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('company/1')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 03:48:51 --> ErrorException: preg_match(): Compilation failed: missing closing parenthesis at offset 17
+[Method: PUT, Route: company/1]
+in SYSTEMPATH/Router/Router.php on line 432.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: missing closing parenthesis at offset 17', '/Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Router/Router.php', 432)
+ 2 SYSTEMPATH/Router/Router.php(432): preg_match('#^company/([0-9]+$#u', 'company/1', [])
+ 3 SYSTEMPATH/Router/Router.php(210): CodeIgniter\Router\Router->checkRoutes('company/1')
+ 4 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('company/1')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 03:49:12 --> ErrorException: preg_match(): Compilation failed: missing closing parenthesis at offset 17
+[Method: PUT, Route: company/1]
+in SYSTEMPATH/Router/Router.php on line 432.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Compilation failed: missing closing parenthesis at offset 17', '/Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Router/Router.php', 432)
+ 2 SYSTEMPATH/Router/Router.php(432): preg_match('#^company/([0-9]+$#u', 'company/1', [])
+ 3 SYSTEMPATH/Router/Router.php(210): CodeIgniter\Router\Router->checkRoutes('company/1')
+ 4 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('company/1')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:12:26 --> ArgumentCountError: Too few arguments to function App\Controllers\CompanyController::generateQr(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: generateqr]
+in APPPATH/Controllers/CompanyController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateQr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:13:44 --> ArgumentCountError: Too few arguments to function App\Controllers\CompanyController::generateqr(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: generateqr]
+in APPPATH/Controllers/CompanyController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:14:04 --> ArgumentCountError: Too few arguments to function App\Controllers\CompanyController::generateqr(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: generateqr]
+in APPPATH/Controllers/CompanyController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:14:13 --> ArgumentCountError: Too few arguments to function App\Controllers\CompanyController::generateqr(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: generateqr]
+in APPPATH/Controllers/CompanyController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:14:33 --> Error: Class "App\Controllers\QRcode" not found
+[Method: GET, Route: generateqr]
+in APPPATH/Controllers/CompanyController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:15:06 --> Error: Class "App\Controllers\QRcode" not found
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:15:25 --> Error: Class "App\Controllers\QRcode" not found
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:16:09 --> Error: Class "App\Controllers\QRcode" not found
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:18:32 --> Error: Class "App\Controllers\QRcode" not found
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:22:15 --> Error: Class "App\Controllers\QRcode" not found
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:25:31 --> Error: Class "App\Controllers\QRcode" not found
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:25:48 --> Error: Class "App\Libraries\QRcode" not found
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:41:36 --> Error: Call to undefined method Endroid\QrCode\QrCode::png()
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:41:44 --> Error: Call to undefined method Endroid\QrCode\QrCode::png()
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 04:49:36 --> ArgumentCountError: Too few arguments to function App\Controllers\CompanyController::generateqr(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: company/generateqr]
+in APPPATH/Controllers/CompanyController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\CompanyController->generateqr()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompanyController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 18:25:22 --> ErrorException: Undefined variable $id
+[Method: GET, Route: marcaje/excel]
+in APPPATH/Controllers/HorasExtrasController.php on line 134.
+ 1 APPPATH/Controllers/HorasExtrasController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', '/Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:25:29 --> mysqli_sql_exception: Table 'marcaje.user' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:25:29 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:37:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `users`.`name` as `user_name`, `puntosventa`.`name` as `pos_name`
+FROM `extr...' at line 1 in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:37:22 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:37:40 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:37:40 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:38:53 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:38:53 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:39:19 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:39:19 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:40:08 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:40:08 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:40:13 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:40:13 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:41:40 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:41:40 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:42:45 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:42:45 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:43:13 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:43:13 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:43:21 --> mysqli_sql_exception: Unknown column 'horas_extras.user_id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:43:21 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:45:26 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:45:26 --> Error: Call to a member function getResult() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 287.
+ 1 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:46:17 --> mysqli_sql_exception: Unknown column 'horas_extras.user_id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:46:17 --> Error: Call to a member function getResult() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 287.
+ 1 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:46:26 --> mysqli_sql_exception: Unknown column 'horas_extras.user_id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:46:26 --> Error: Call to a member function getResult() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 287.
+ 1 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:46:56 --> mysqli_sql_exception: Unknown column 'horas_extras.user_id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:46:56 --> Error: Call to a member function getResult() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 287.
+ 1 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:48:11 --> mysqli_sql_exception: Unknown column 'horas_extras.user_id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:48:11 --> Error: Call to a member function getResult() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 287.
+ 1 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:49:07 --> mysqli_sql_exception: Unknown column 'horas_extras.user_id' in 'on clause' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:49:07 --> Error: Call to a member function getResult() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 287.
+ 1 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/HorasExtrasController.php(136): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:50:15 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:50:15 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 18:50:37 --> mysqli_sql_exception: Unknown column 'horas_extras.id' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `horas_e...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `horas_e...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `horas_e...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `horas_e...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 18:50:37 --> Error: Call to a member function getFirstRow() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 330.
+ 1 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 2 APPPATH/Controllers/HorasExtrasController.php(135): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 19:21:24 --> Error: Object of class DateTime could not be converted to string
+[Method: POST, Route: marcaje]
+in SYSTEMPATH/Database/Query.php on line 337.
+ 1 SYSTEMPATH/Database/Query.php(337): strtr('UPDATE `extra_hours` SET `updated_at` = :updated_at:, `horas` = :horas:
+WHERE `extra_hours`.`id` IN :extra_hours.id:', [...])
+ 2 SYSTEMPATH/Database/Query.php(312): CodeIgniter\Database\Query->matchNamedBinds('UPDATE `extra_hours` SET `updated_at` = :updated_at:, `horas` = :horas:
+WHERE `extra_hours`.`id` IN :extra_hours.id:', [...])
+ 3 SYSTEMPATH/Database/Query.php(163): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `extra_hours` SET `updated_at` = :updated_at:, `horas` = :horas:
+WHERE `extra_hours`.`id` IN :extra_hours.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH/BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH/Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH/Controllers/HorasExtrasController.php(99): CodeIgniter\Model->update(12, [...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->create()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-04 19:22:11 --> Error: Object of class DateTime could not be converted to string
+[Method: POST, Route: marcaje]
+in SYSTEMPATH/Database/Query.php on line 337.
+ 1 SYSTEMPATH/Database/Query.php(337): strtr('UPDATE `extra_hours` SET `updated_at` = :updated_at:, `horas` = :horas:
+WHERE `extra_hours`.`id` IN :extra_hours.id:', [...])
+ 2 SYSTEMPATH/Database/Query.php(312): CodeIgniter\Database\Query->matchNamedBinds('UPDATE `extra_hours` SET `updated_at` = :updated_at:, `horas` = :horas:
+WHERE `extra_hours`.`id` IN :extra_hours.id:', [...])
+ 3 SYSTEMPATH/Database/Query.php(163): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `extra_hours` SET `updated_at` = :updated_at:, `horas` = :horas:
+WHERE `extra_hours`.`id` IN :extra_hours.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH/BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH/Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH/Controllers/HorasExtrasController.php(99): CodeIgniter\Model->update(13, [...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->create()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-04 19:44:20 --> mysqli_sql_exception: Unknown column 'extra_hours.commnet' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `extra_h...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `extra_h...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `extra_h...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `extra_h...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/HorasExtrasController.php(192): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-10-04 19:44:20 --> Error: Call to a member function getResult() on false
+[Method: GET, Route: marcaje/excel]
+in SYSTEMPATH/Model.php on line 287.
+ 1 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH/Controllers/HorasExtrasController.php(192): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\HorasExtrasController->generateExcelReport()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HorasExtrasController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')

@@ -1,0 +1,222 @@
+ERROR - 2024-10-03 23:21:15 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(121): CodeIgniter\Model->update('1', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('1')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-10-03 23:40:21 --> Error: Cannot use object of type stdClass as array
+[Method: PUT, Route: auth/update/1]
+in APPPATH/Controllers/AuthController.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('1')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-03 23:40:24 --> Error: Cannot use object of type stdClass as array
+[Method: PUT, Route: auth/update/1]
+in APPPATH/Controllers/AuthController.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('1')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-03 23:40:50 --> Error: Cannot use object of type stdClass as array
+[Method: PUT, Route: auth/update/1]
+in APPPATH/Controllers/AuthController.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('1')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-03 23:41:01 --> Error: Cannot use object of type stdClass as array
+[Method: PUT, Route: auth/update/1]
+in APPPATH/Controllers/AuthController.php on line 120.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('1')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+CRITICAL - 2024-10-03 23:41:07 --> Error: Cannot use object of type stdClass as array
+[Method: PUT, Route: auth/update/1]
+in APPPATH/Controllers/AuthController.php on line 118.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('1')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
+ERROR - 2024-10-03 23:42:03 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(123): CodeIgniter\Model->update('2', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+ERROR - 2024-10-03 23:42:12 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(123): CodeIgniter\Model->update('2', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+ERROR - 2024-10-03 23:42:42 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(123): CodeIgniter\Model->update('2', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+ERROR - 2024-10-03 23:43:00 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(123): CodeIgniter\Model->update('2', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+ERROR - 2024-10-03 23:43:18 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(123): CodeIgniter\Model->update('3', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('3')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+ERROR - 2024-10-03 23:44:20 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(123): CodeIgniter\Model->update('2', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+ERROR - 2024-10-03 23:45:08 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(123): CodeIgniter\Model->update('2', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+ERROR - 2024-10-03 23:45:52 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'email' in /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/MySQLi/Connection.php(312): mysqli->query('UPDATE `users` ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Database/BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/citemplate/app/Controllers/AuthController.php(124): CodeIgniter\Model->update('2', Object(stdClass))
+#8 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/citemplate/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-10-03 23:46:34 --> Error: Cannot use object of type stdClass as array
+[Method: PUT, Route: auth/update/2]
+in APPPATH/Controllers/AuthController.php on line 121.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->updateUser('2')
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/citemplate/public/index.php')
