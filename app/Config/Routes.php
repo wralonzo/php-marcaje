@@ -23,7 +23,7 @@ $routes->get('company/generateqr/(:num)', 'CompanyController::generateqr/$1');
 
 
 $routes->get('marcaje', 'HorasExtrasController::display');
-$routes->post('marcaje', 'HorasExtrasController::create');
+$routes->post('marcaje/create', 'HorasExtrasController::create');
 $routes->put('marcaje/(:num)', 'HorasExtrasController::upgrade/$1');
 $routes->delete('marcaje/(:num)', 'HorasExtrasController::deleteOne/$1');
 $routes->get('marcaje/find/(:num)', 'HorasExtrasController::find/$1');
