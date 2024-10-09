@@ -6,8 +6,8 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    public string $fromEmail  = '';
-    public string $fromName   = '';
+    public string $fromEmail  = 'invoicerenergy@gmail.com';
+    public string $fromName   = 'Automatizacion Recetas';
     public string $recipients = '';
 
     /**
@@ -18,37 +18,32 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'mail';
-
-    /**
-     * The server path to Sendmail.
-     */
-    public string $mailPath = '/usr/sbin/sendmail';
+    public string $protocol = 'smtp';  // Cambiar a 'smtp'
 
     /**
      * SMTP Server Hostname
      */
-    public string $SMTPHost = '';
+    public string $SMTPHost = 'smtp.gmail.com';
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = '';
+    public string $SMTPUser = 'invoicerenergy@gmail.com';
 
     /**
      * SMTP Password
      */
-    public string $SMTPPass = '';
+    public string $SMTPPass = 'egba adpy aysl bakg';  // Revisa que esta contraseña sea correcta y generada como contraseña de aplicación en Gmail.
 
     /**
      * SMTP Port
      */
-    public int $SMTPPort = 25;
+    public int $SMTPPort = 587;
 
     /**
      * SMTP Timeout (in seconds)
      */
-    public int $SMTPTimeout = 5;
+    public int $SMTPTimeout = 10;
 
     /**
      * Enable persistent SMTP connections
@@ -62,7 +57,7 @@ class Email extends BaseConfig
      *             to the server. 'ssl' means implicit SSL. Connection on port
      *             465 should set this to ''.
      */
-    public string $SMTPCrypto = 'tls';
+    public string $SMTPCrypto = 'tls';  // Asegúrate de usar 'tls' para el puerto 587.
 
     /**
      * Enable word-wrap
@@ -77,7 +72,7 @@ class Email extends BaseConfig
     /**
      * Type of mail, either 'text' or 'html'
      */
-    public string $mailType = 'text';
+    public string $mailType = 'html';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)
@@ -87,7 +82,7 @@ class Email extends BaseConfig
     /**
      * Whether to validate the email address
      */
-    public bool $validate = false;
+    public bool $validate = true;
 
     /**
      * Email Priority. 1 = highest. 5 = lowest. 3 = normal
@@ -107,15 +102,5 @@ class Email extends BaseConfig
     /**
      * Enable BCC Batch Mode.
      */
-    public bool $BCCBatchMode = false;
-
-    /**
-     * Number of emails in each BCC batch
-     */
-    public int $BCCBatchSize = 200;
-
-    /**
-     * Enable notify message from server
-     */
-    public bool $DSN = false;
+    public bool $BCC;
 }
