@@ -75,16 +75,28 @@ class AuthController extends ResourceController
 
     public function users()
     {
-        $userModel = new UserModel();
-        $user = $userModel->findAll();
-        // Aquí puedes generar un token JWT u otra lógica
-        $response = [
-            'message' => 'Login successful',
-            'logged' => true,
-            'users' => $user
-        ];
+        try {
+            $userModel = new UserModel();
+            $user = $userModel->select(
+                'users.id,
+            users.email,
+            users.password,
+            users.name,
+            users.role,
+            users.dpi,
+            users.group_id,
+            users.pos,puntosventa.name as posName '
+            )->join('puntosventa', 'users.pos = puntosventa.idPos')->findAll();
+            $response = [
+                'message' => 'Login successful',
+                'logged' => true,
+                'users' => $user
+            ];
 
-        return $this->respond($response);
+            return $this->respond($response);
+        } catch (Exception $e) {
+            return $this->failServerError('An error occurred: ' . $e->getMessage());
+        }
     }
 
     public function getUser($id)
