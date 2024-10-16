@@ -187,8 +187,11 @@ class HorasExtrasController extends ResourceController
             extra_hours.time,
             extra_hours.date,
             users.name as user_name,
+            users.id as idUser,
             users.dpi,
             users.group_id,
+            users.role,
+            users.created_at,
             puntosventa.name as pos_name')
                 ->join('users', 'users.id = extra_hours.user_id')
                 ->join('puntosventa', 'puntosventa.idPos = extra_hours.pos_id')
@@ -204,28 +207,34 @@ class HorasExtrasController extends ResourceController
             $sheet = $spreadsheet->getActiveSheet();
 
             // // Escribir los encabezados en la primera fila
-            $sheet->setCellValue('A1', 'Comentario');
-            $sheet->setCellValue('B1', 'Hora inicio');
-            $sheet->setCellValue('C1', 'Hora fin');
-            $sheet->setCellValue('D1', 'fecha');
-            $sheet->setCellValue('E1', 'Grupo');
-            $sheet->setCellValue('F1', 'DPI');
-            $sheet->setCellValue('G1', 'POS');
-            $sheet->setCellValue('H1', 'Nombre');
-            $sheet->setCellValue('I1', 'Horas');
+            $sheet->setCellValue('A1', 'Id Usuario');
+            $sheet->setCellValue('B1', 'Nombre');
+            $sheet->setCellValue('C1', 'DPI');
+            $sheet->setCellValue('D1', 'Cargo');
+            $sheet->setCellValue('E1', 'Ingreso');
+            $sheet->setCellValue('F1', 'Comentario');
+            $sheet->setCellValue('G1', 'Hora inicio');
+            $sheet->setCellValue('H1', 'Hora fin');
+            $sheet->setCellValue('I1', 'fecha');
+            $sheet->setCellValue('J1', 'Grupo');
+            $sheet->setCellValue('K1', 'POS');
+            $sheet->setCellValue('L1', 'Horas');
 
             // // Agregar los datos a las celdas, empezando desde la fila 2
             $row = 2;
             foreach ($data as $record) {
-                $sheet->setCellValue('A' . $row, $record['comment']);
-                $sheet->setCellValue('B' . $row, $record['time']);
-                $sheet->setCellValue('C' . $row, $record['horasalida']);
-                $sheet->setCellValue('D' . $row, $record['date']);
-                $sheet->setCellValue('E' . $row, $record['group_id']);
-                $sheet->setCellValue('F' . $row, $record['dpi']);
-                $sheet->setCellValue('G' . $row, $record['point_of_sale']);
-                $sheet->setCellValue('H' . $row, $record['user_name']);
-                $sheet->setCellValue('I' . $row, $record['horas']);
+                $sheet->setCellValue('A' . $row, $record['idUser']);
+                $sheet->setCellValue('B' . $row, $record['user_name']);
+                $sheet->setCellValue('C' . $row, $record['dpi']);
+                $sheet->setCellValue('D' . $row, $record['role']);
+                $sheet->setCellValue('E' . $row, $record['created_at']);
+                $sheet->setCellValue('F' . $row, $record['comment']);
+                $sheet->setCellValue('G' . $row, $record['time']);
+                $sheet->setCellValue('H' . $row, $record['horasalida']);
+                $sheet->setCellValue('I' . $row, $record['date']);
+                $sheet->setCellValue('J' . $row, $record['group_id']);
+                $sheet->setCellValue('K' . $row, $record['point_of_sale']);
+                $sheet->setCellValue('L' . $row, $record['horas']);
                 $row++;
             }
 

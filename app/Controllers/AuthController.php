@@ -126,4 +126,58 @@ class AuthController extends ResourceController
             return $this->failServerError('An error occurred: ' . $e->getMessage());
         }
     }
+
+    public function generate($id)
+    {
+        try {
+            // Validar que el ID del usuario sea válido
+            $userModel = new UserModel();
+            $user = $userModel->find($id);
+            if (!$user) {
+                return $this->failNotFound('Usuario no encontrado');
+            }
+            $passwordRamdom = $this->generateRandomPassword();
+            $data =  [
+                'password' => password_hash($passwordRamdom, PASSWORD_DEFAULT),
+            ];
+
+            $userModel->update($id, $data);
+            return $this->respondUpdated(['message' => $passwordRamdom, 'statusCode' => 200]);
+        } catch (Exception $e) {
+            return $this->failServerError('Error al generar la contraseña: ' . $e->getMessage());
+        }
+    }
+
+    public function password()
+    {
+        try {
+            // Validar que el ID del usuario sea válido
+            $json = $this->request->getJSON();
+            $userModel = new UserModel();
+            $user = $userModel->where('dpi', $json->dpi)->first();
+            if (!$user) {
+                return $this->failNotFound('DPI no encontrado');
+            }
+            $json->password = password_hash($json->password, PASSWORD_DEFAULT);
+            $userModel->update($user['id'], $json);
+            return $this->respondUpdated(['message' => 'Contraseña recuperada correctamente', 'statusCode' => 200,]);
+        } catch (Exception $e) {
+            return $this->failServerError('Error al recuperar la contraseña: ' . $e->getMessage());
+        }
+    }
+
+    private function generateRandomPassword($length = 10)
+    {
+        // Definir el conjunto de caracteres para generar la contraseña
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+
+        // Generar una cadena aleatoria de la longitud especificada
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+
+        return $randomString;
+    }
 }

@@ -12,6 +12,8 @@ $routes->get('auth/find/(:num)', 'AuthController::getUser/$1');
 $routes->post('auth/login', 'AuthController::login');
 $routes->get('auth/users', 'AuthController::users');
 $routes->delete('auth/users', 'AuthController::users');
+$routes->get('auth/generate/(:num)', 'AuthController::generate/$1');
+$routes->post('auth/password', 'AuthController::password');
 
 
 $routes->get('company', 'CompanyController::index');
