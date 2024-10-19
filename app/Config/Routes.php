@@ -11,7 +11,7 @@ $routes->put('auth/update/(:num)', 'AuthController::updateUser/$1');
 $routes->get('auth/find/(:num)', 'AuthController::getUser/$1');
 $routes->post('auth/login', 'AuthController::login');
 $routes->get('auth/users', 'AuthController::users');
-$routes->delete('auth/users', 'AuthController::users');
+$routes->delete('auth/delete/(:num)', 'AuthController::deleteOne/$1');
 $routes->get('auth/generate/(:num)', 'AuthController::generate/$1');
 $routes->post('auth/password', 'AuthController::password');
 
@@ -30,6 +30,7 @@ $routes->put('marcaje/(:num)', 'HorasExtrasController::upgrade/$1');
 $routes->delete('marcaje/(:num)', 'HorasExtrasController::deleteOne/$1');
 $routes->get('marcaje/find/(:num)', 'HorasExtrasController::find/$1');
 $routes->get('marcaje/excel', 'HorasExtrasController::generateExcelReport');
+$routes->get('marcaje/exceluser/(:num)', 'HorasExtrasController::generateExcelReportUser/$1');
 
 
 $routes->get('send-email', 'EmailController::send_email');

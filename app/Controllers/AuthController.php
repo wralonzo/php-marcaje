@@ -55,7 +55,7 @@ class AuthController extends ResourceController
         }
         $json = $this->request->getJSON();
         $userModel = new UserModel();
-        $user = $userModel->where('dpi', $json->email)->first();
+        $user = $userModel->where('dpi', $json->email)->where('estado', 1)->first();
         if (!$user || !password_verify($json->password, $user['password'])) {
             $response = [
                 'message' => 'Credenciales no válidas',
@@ -87,7 +87,7 @@ class AuthController extends ResourceController
             users.dpi,
             users.group_id,
             users.pos,puntosventa.name as posName '
-            )->join('puntosventa', 'users.pos = puntosventa.idPos')->findAll();
+            )->join('puntosventa', 'users.pos = puntosventa.idPos')->where('estado', 1)->findAll();
             $response = [
                 'message' => 'Login successful',
                 'logged' => true,
@@ -104,7 +104,7 @@ class AuthController extends ResourceController
     {
         try {
             $userModel = new UserModel();
-            $user = $userModel->find($id);
+            $user = $userModel->where('estado', 1)->find($id);
             $response = [
                 'message' => 'Login successful',
                 'logged' => true,
@@ -192,5 +192,33 @@ class AuthController extends ResourceController
         }
 
         return $randomString;
+    }
+
+    public function deleteOne($id)
+    {
+        try {
+
+            // Buscar el registro en el modelo
+            $model = new UserModel();
+            $record = $model->find($id);
+
+            // Verificar si el registro existe
+            if (!$record) {
+                return $this->failNotFound('Record not found');
+            }
+            $model->update($id, [
+                "estado" => 0
+            ]);
+            // Respuesta exitosa con el registro encontrado
+            $response = [
+                'message' => 'Record found successfully',
+                'logged' => true,
+                'data' => $record
+            ];
+
+            return $this->respond($response, 200); // Código HTTP 200 OK
+        } catch (Exception $e) {
+            return $this->failServerError('An error occurred: ' . $e->getMessage());
+        }
     }
 }

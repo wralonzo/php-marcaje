@@ -173,12 +173,13 @@ class HorasExtrasController extends ResourceController
             return $this->failServerError('An error occurred: ' . $e->getMessage());
         }
     }
-    public function generateExcelReport()
+
+    public function generateExcelReportUser($id)
     {
         try {
             // Instanciar el modelo para obtener los datos
             $model = new HorasExtrasModel();
-
+            
             $data = $model->select('extra_hours.id,
             extra_hours.horas,
             extra_hours.point_of_sale,
@@ -186,6 +187,8 @@ class HorasExtrasController extends ResourceController
             extra_hours.horasalida,
             extra_hours.time,
             extra_hours.date,
+            extra_hours.entry_or_exit,
+            extra_hours.estado,
             users.name as user_name,
             users.id as idUser,
             users.dpi,
@@ -195,7 +198,8 @@ class HorasExtrasController extends ResourceController
             puntosventa.name as pos_name')
                 ->join('users', 'users.id = extra_hours.user_id')
                 ->join('puntosventa', 'puntosventa.idPos = extra_hours.pos_id')
-                ->where('entry_or_exit', 'salida')
+                ->where('user_id', $id)
+                ->orderBy('extra_hours.id', 'ASC')
                 ->findAll();
 
 
@@ -212,13 +216,14 @@ class HorasExtrasController extends ResourceController
             $sheet->setCellValue('C1', 'DPI');
             $sheet->setCellValue('D1', 'Cargo');
             $sheet->setCellValue('E1', 'Ingreso');
-            $sheet->setCellValue('F1', 'Comentario');
-            $sheet->setCellValue('G1', 'Hora inicio');
-            $sheet->setCellValue('H1', 'Hora fin');
-            $sheet->setCellValue('I1', 'fecha');
-            $sheet->setCellValue('J1', 'Grupo');
-            $sheet->setCellValue('K1', 'POS');
-            $sheet->setCellValue('L1', 'Horas');
+            $sheet->setCellValue('F1', 'Hora inicio');
+            $sheet->setCellValue('G1', 'Hora fin');
+            $sheet->setCellValue('H1', 'fecha');
+            $sheet->setCellValue('I1', 'Grupo');
+            $sheet->setCellValue('J1', 'POS');
+            $sheet->setCellValue('K1', 'Horas');
+            $sheet->setCellValue('L1', 'Entrada/Salida');
+            $sheet->setCellValue('M1', 'Estado');
 
             // // Agregar los datos a las celdas, empezando desde la fila 2
             $row = 2;
@@ -228,13 +233,95 @@ class HorasExtrasController extends ResourceController
                 $sheet->setCellValue('C' . $row, $record['dpi']);
                 $sheet->setCellValue('D' . $row, $record['role']);
                 $sheet->setCellValue('E' . $row, $record['created_at']);
-                $sheet->setCellValue('F' . $row, $record['comment']);
-                $sheet->setCellValue('G' . $row, $record['time']);
-                $sheet->setCellValue('H' . $row, $record['horasalida']);
-                $sheet->setCellValue('I' . $row, $record['date']);
-                $sheet->setCellValue('J' . $row, $record['group_id']);
-                $sheet->setCellValue('K' . $row, $record['point_of_sale']);
-                $sheet->setCellValue('L' . $row, $record['horas']);
+                $sheet->setCellValue('F' . $row, $record['time']);
+                $sheet->setCellValue('G' . $row, $record['horasalida']);
+                $sheet->setCellValue('H' . $row, $record['date']);
+                $sheet->setCellValue('I' . $row, $record['group_id']);
+                $sheet->setCellValue('J' . $row, $record['point_of_sale']);
+                $sheet->setCellValue('K' . $row, $record['horas']);
+                $sheet->setCellValue('L' . $row, $record['entry_or_exit']);
+                $sheet->setCellValue('M' . $row, $record['estado'] == 1 ? 'Finalizado' : 'Pendiente');
+                $row++;
+            }
+
+            $writer = new Xlsx($spreadsheet);
+            $fileName = 'reporte.xlsx';
+            header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+            header('Content-Disposition: attachment; filename="' . $fileName . '"');
+            header('Cache-Control: max-age=0');
+            $writer->save('php://output');
+            exit;
+        } catch (Exception $e) {
+            var_dump($e);
+        }
+    }
+
+    public function generateExcelReport()
+    {
+        try {
+            // Instanciar el modelo para obtener los datos
+            $model = new HorasExtrasModel();
+
+            $data = $model->select('extra_hours.id,
+            extra_hours.horas,
+            extra_hours.point_of_sale,
+            extra_hours.comment,
+            extra_hours.horasalida,
+            extra_hours.time,
+            extra_hours.date,
+            extra_hours.entry_or_exit,
+            extra_hours.estado,
+            users.name as user_name,
+            users.id as idUser,
+            users.dpi,
+            users.group_id,
+            users.role,
+            users.created_at,
+            puntosventa.name as pos_name')
+                ->join('users', 'users.id = extra_hours.user_id')
+                ->join('puntosventa', 'puntosventa.idPos = extra_hours.pos_id')
+                ->orderBy('extra_hours.id', 'ASC')
+                ->findAll();
+
+
+            // Si necesitas ver la consulta SQL para depurar:
+            // echo $model->getLastQuery();
+
+            // // Crear un nuevo documento de hoja de cálculo
+            $spreadsheet = new Spreadsheet();
+            $sheet = $spreadsheet->getActiveSheet();
+
+            // // Escribir los encabezados en la primera fila
+            $sheet->setCellValue('A1', 'Id Usuario');
+            $sheet->setCellValue('B1', 'Nombre');
+            $sheet->setCellValue('C1', 'DPI');
+            $sheet->setCellValue('D1', 'Cargo');
+            $sheet->setCellValue('E1', 'Ingreso');
+            $sheet->setCellValue('F1', 'Hora inicio');
+            $sheet->setCellValue('G1', 'Hora fin');
+            $sheet->setCellValue('H1', 'fecha');
+            $sheet->setCellValue('I1', 'Grupo');
+            $sheet->setCellValue('J1', 'POS');
+            $sheet->setCellValue('K1', 'Horas');
+            $sheet->setCellValue('L1', 'Entrada/Salida');
+            $sheet->setCellValue('M1', 'Estado');
+
+            // // Agregar los datos a las celdas, empezando desde la fila 2
+            $row = 2;
+            foreach ($data as $record) {
+                $sheet->setCellValue('A' . $row, $record['idUser']);
+                $sheet->setCellValue('B' . $row, $record['user_name']);
+                $sheet->setCellValue('C' . $row, $record['dpi']);
+                $sheet->setCellValue('D' . $row, $record['role']);
+                $sheet->setCellValue('E' . $row, $record['created_at']);
+                $sheet->setCellValue('F' . $row, $record['time']);
+                $sheet->setCellValue('G' . $row, $record['horasalida']);
+                $sheet->setCellValue('H' . $row, $record['date']);
+                $sheet->setCellValue('I' . $row, $record['group_id']);
+                $sheet->setCellValue('J' . $row, $record['point_of_sale']);
+                $sheet->setCellValue('K' . $row, $record['horas']);
+                $sheet->setCellValue('L' . $row, $record['entry_or_exit']);
+                $sheet->setCellValue('M' . $row, $record['estado'] == 1 ? 'Finalizado' : 'Pendiente');
                 $row++;
             }
 
