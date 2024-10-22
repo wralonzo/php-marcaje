@@ -75,6 +75,14 @@ class CompanyController extends ResourceController
     {
         try {
             // Validar que el ID del usuario sea válido
+            if ($id == 7) {
+                $response = [
+                    'message' => 'Record found successfully',
+                    'logged' => true,
+                    'data' => ''
+                ];
+                return $this->respond($response, 200); //
+            }
             $model = new CompanyModel();
             $record = $model->find($id);
             if (!$record) {
@@ -117,7 +125,14 @@ class CompanyController extends ResourceController
     public function deleteOne($id)
     {
         try {
-
+            if ($id == 7) {
+                $response = [
+                    'message' => 'Record found successfully',
+                    'logged' => true,
+                    'data' => ''
+                ];
+                return $this->respond($response, 200); //
+            }
             // Buscar el registro en el modelo
             $model = new CompanyModel();
             $record = $model->find($id);
