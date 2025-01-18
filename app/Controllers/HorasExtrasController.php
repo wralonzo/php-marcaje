@@ -310,6 +310,7 @@ class HorasExtrasController extends ResourceController
             $sheet->setCellValue('K1', 'Horas');
             $sheet->setCellValue('L1', 'Entrada/Salida');
             $sheet->setCellValue('M1', 'Estado');
+            $sheet->setCellValue('N1', 'Territorio');
 
             // // Agregar los datos a las celdas, empezando desde la fila 2
             $row = 2;
@@ -326,7 +327,8 @@ class HorasExtrasController extends ResourceController
                 $sheet->setCellValue('J' . $row, $record['point_of_sale']);
                 $sheet->setCellValue('K' . $row, $record['horas']);
                 $sheet->setCellValue('L' . $row, $record['entry_or_exit']);
-                $sheet->setCellValue('M' . $row, $record['estado'] == 1 ? 'Finalizado' : 'Pendiente');
+                $sheet->setCellValue('M' . $row, $record['estado'] == 0 ? 'Finalizado' : 'Pendiente');
+                $sheet->setCellValue('N' . $row, $record['territorio']);
                 $row++;
             }
 
