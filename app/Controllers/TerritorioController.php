@@ -5,8 +5,6 @@ namespace App\Controllers;
 use App\Models\TerritorioModel;
 use CodeIgniter\RESTful\ResourceController;
 use Exception;
-use Endroid\QrCode\QrCode;
-use Endroid\QrCode\Writer\PngWriter;
 
 class TerritorioController extends ResourceController
 {
@@ -24,7 +22,6 @@ class TerritorioController extends ResourceController
 
         return $this->respond($response);
     }
-
 
     public function create()
     {
