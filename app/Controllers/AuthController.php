@@ -35,7 +35,7 @@ class AuthController extends ResourceController
                 'group_id'      => $json->group_id ?? null,
                 'password'      => password_hash($json->password ?? '', PASSWORD_DEFAULT),
                 'pos'           => $json->pos,
-                'territorio'           => $json->pos,
+                'territorio'    => $json->territorio,
             ];
             $userModel->save($data);
             return $this->respondCreated(['message' => 'User registered successfully', 'statusCode' => 200]);
