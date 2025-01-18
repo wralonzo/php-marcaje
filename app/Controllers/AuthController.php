@@ -35,6 +35,7 @@ class AuthController extends ResourceController
                 'group_id'      => $json->group_id ?? null,
                 'password'      => password_hash($json->password ?? '', PASSWORD_DEFAULT),
                 'pos'           => $json->pos,
+                'territorio'           => $json->pos,
             ];
             $userModel->save($data);
             return $this->respondCreated(['message' => 'User registered successfully', 'statusCode' => 200]);
@@ -86,8 +87,13 @@ class AuthController extends ResourceController
             users.role,
             users.dpi,
             users.group_id,
+            territorio.id_territorio,
+            territorio.nombre as territorio,
             users.pos,puntosventa.name as posName '
-            )->join('puntosventa', 'users.pos = puntosventa.idPos')->where('estado', 1)->findAll();
+            )->join('puntosventa', 'users.pos = puntosventa.idPos')
+            ->join('territorio', 'territorio.id_territorio = users.territorio')
+            ->where('estado', 1)
+            ->findAll();
             $response = [
                 'message' => 'Login successful',
                 'logged' => true,
