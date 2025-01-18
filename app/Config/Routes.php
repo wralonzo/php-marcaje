@@ -31,6 +31,7 @@ $routes->delete('marcaje/(:num)', 'HorasExtrasController::deleteOne/$1');
 $routes->get('marcaje/find/(:num)', 'HorasExtrasController::find/$1');
 $routes->get('marcaje/excel', 'HorasExtrasController::generateExcelReport');
 $routes->get('marcaje/exceluser/(:num)', 'HorasExtrasController::generateExcelReportUser/$1');
+$routes->get('marcaje/excelsupervisor/(:num)', 'HorasExtrasController::generateExcelReportSupervisor/$1');
 
 
 $routes->get('send-email', 'EmailController::send_email');
