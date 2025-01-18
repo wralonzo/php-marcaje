@@ -68,7 +68,7 @@ class HorasExtrasController extends ResourceController
                 if (!$buscarEntrada) {
                     return $this->failResourceExists('Primero marque una entrada: ');
                 }
-                $company = $modelCompany->where('idPos', $user['pos'])->first();
+                $company = $modelCompany->where('idPos', $json['pos'])->first();
                 $data = [
                     "user_id" => $json->user_id,
                     "pos_id" => $company['idPos'],
@@ -244,7 +244,7 @@ class HorasExtrasController extends ResourceController
                 $sheet->setCellValue('J' . $row, $record['point_of_sale']);
                 $sheet->setCellValue('K' . $row, $record['horas']);
                 $sheet->setCellValue('L' . $row, $record['entry_or_exit']);
-                $sheet->setCellValue('M' . $row, $record['estado'] == 1 ? 'Finalizado' : 'Pendiente');
+                $sheet->setCellValue('M' . $row, $record['estado'] == 0 ? 'Finalizado' : 'Pendiente');
                 $sheet->setCellValue('N' . $row, $record['territorio']);
                 $row++;
             }
