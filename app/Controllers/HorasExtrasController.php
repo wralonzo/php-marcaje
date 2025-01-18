@@ -195,9 +195,12 @@ class HorasExtrasController extends ResourceController
             users.group_id,
             users.role,
             users.created_at,
+            territorio.id_territorio,
+            territorio.nombre as territorio,
             puntosventa.name as pos_name')
                 ->join('users', 'users.id = extra_hours.user_id')
                 ->join('puntosventa', 'puntosventa.idPos = extra_hours.pos_id')
+                ->join('territorio', 'territorio.id_territorio = users.territorio')
                 ->where('user_id', $id)
                 ->orderBy('extra_hours.id', 'ASC')
                 ->findAll();
@@ -224,6 +227,7 @@ class HorasExtrasController extends ResourceController
             $sheet->setCellValue('K1', 'Horas');
             $sheet->setCellValue('L1', 'Entrada/Salida');
             $sheet->setCellValue('M1', 'Estado');
+            $sheet->setCellValue('N1', 'Territorio');
 
             // // Agregar los datos a las celdas, empezando desde la fila 2
             $row = 2;
@@ -241,6 +245,7 @@ class HorasExtrasController extends ResourceController
                 $sheet->setCellValue('K' . $row, $record['horas']);
                 $sheet->setCellValue('L' . $row, $record['entry_or_exit']);
                 $sheet->setCellValue('M' . $row, $record['estado'] == 1 ? 'Finalizado' : 'Pendiente');
+                $sheet->setCellValue('N' . $row, $record['territorio']);
                 $row++;
             }
 
