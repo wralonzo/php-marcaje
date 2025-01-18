@@ -93,6 +93,7 @@ class AuthController extends ResourceController
             )->join('puntosventa', 'users.pos = puntosventa.idPos')
             ->join('territorio', 'territorio.id_territorio = users.territorio')
             ->where('estado', 1)
+            ->orderBy('users.id', 'DESC')
             ->findAll();
             $response = [
                 'message' => 'Login successful',
