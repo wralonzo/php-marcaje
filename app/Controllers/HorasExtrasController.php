@@ -194,6 +194,7 @@ class HorasExtrasController extends ResourceController
             users.dpi,
             users.group_id,
             users.role,
+            users.estado,
             users.created_at,
             territorio.id_territorio,
             territorio.nombre as territorio,
@@ -201,6 +202,7 @@ class HorasExtrasController extends ResourceController
                 ->join('users', 'users.id = extra_hours.user_id')
                 ->join('puntosventa', 'puntosventa.idPos = extra_hours.pos_id')
                 ->join('territorio', 'territorio.id_territorio = users.territorio')
+                ->where('users.estado', 1)
                 ->where('user_id', $id)
                 ->orderBy('extra_hours.id', 'ASC')
                 ->findAll();
@@ -282,12 +284,14 @@ class HorasExtrasController extends ResourceController
             users.group_id,
             users.role,
             users.created_at,
+            users.estado,
             territorio.id_territorio,
             territorio.nombre as territorio,
             puntosventa.name as pos_name')
                 ->join('users', 'users.id = extra_hours.user_id')
                 ->join('territorio', 'territorio.id_territorio = users.territorio')
                 ->join('puntosventa', 'puntosventa.idPos = extra_hours.pos_id')
+                ->where('users.estado', 1)
                 ->orderBy('extra_hours.id', 'ASC')
                 ->findAll();
 
@@ -368,6 +372,7 @@ class HorasExtrasController extends ResourceController
             users.group_id,
             users.role,
             users.created_at,
+            users.estado,
             territorio.id_territorio,
             territorio.nombre as territorio,
             puntosventa.name as pos_name')
@@ -375,6 +380,7 @@ class HorasExtrasController extends ResourceController
                 ->join('puntosventa', 'puntosventa.idPos = extra_hours.pos_id')
                 ->join('territorio', 'territorio.id_territorio = users.territorio')
                 ->where('territorio.id_territorio', $id)
+                ->where('users.estado', 1)
                 ->orderBy('extra_hours.id', 'ASC')
                 ->findAll();
 
