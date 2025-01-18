@@ -34,3 +34,10 @@ $routes->get('marcaje/exceluser/(:num)', 'HorasExtrasController::generateExcelRe
 
 
 $routes->get('send-email', 'EmailController::send_email');
+
+
+$routes->get('territorio', 'TerritorioController::index');
+$routes->post('territorio', 'TerritorioController::create');
+$routes->put('territorio/(:num)', 'TerritorioController::upgrade/$1');
+$routes->delete('territorio/(:num)', 'TerritorioController::deleteOne/$1');
+$routes->get('territorio/find/(:num)', 'TerritorioController::find/$1');
