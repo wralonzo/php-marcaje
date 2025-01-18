@@ -31,7 +31,10 @@ class TerritorioController extends ResourceController
         try {
             $model = new TerritorioModel();
             $json = $this->request->getJSON();
-            $response = $model->save($json);
+            $data = [
+                "nombre" => $json->nombre,
+            ];
+            $response = $model->save($data);
             return $this->respondCreated(['response' => $response, 'message' => 'Datos registrados', 'statusCode' => 201]);
         } catch (Exception $e) {
             return $this->respondCreated(['message' => $e]);

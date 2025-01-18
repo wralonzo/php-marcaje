@@ -10,5 +10,4 @@ class TerritorioModel extends Model
     protected $primaryKey = 'id_territorio';
     protected $allowedFields = ['nombre'];
     protected $returnType = 'array';
-    protected $useTimestamps = true;
 }
